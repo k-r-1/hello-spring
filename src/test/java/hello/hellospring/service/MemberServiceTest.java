@@ -19,7 +19,7 @@ class MemberServiceTest {
 
     @BeforeEach
     public void beforeEach() {
-        // 각 테스트 메서드 실행 전에 수행됨. 여기서 테스트에 사용할 리포지토리와 서비스 인스턴스를 초기화.
+        // 각 테스트 메서드 실행 전에 수행됨. 여기서 테스트에 사용할 리포지토리와 서비스 인스턴스를 초기화
         memberRepository = new MemoryMemberRepository(); // 새로운 MemoryMemberRepository 객체 생성
         memberService = new MemberService(memberRepository);  // 생성된 리포지토리를 주입하여 MemberService 객체 생성
     }
